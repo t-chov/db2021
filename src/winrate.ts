@@ -1,4 +1,11 @@
-export const WIN_RATE = [
+interface WinrateDatapoint {
+  name: string;
+  pearls: number;
+  baystars: number;
+  unions: number;
+}
+
+export const WIN_RATE: WinrateDatapoint[] = [
   { name: "Game 1", pearls: 0.0, baystars: 0.0, unions: 0.0 },
   { name: "Game 2", pearls: 0.0, baystars: 0.0, unions: 0.0 },
   { name: "Game 3", pearls: 0.333, baystars: 0.0, unions: 0.0 },
@@ -20,3 +27,16 @@ export const WIN_RATE = [
   { name: "Game 19", pearls: 0.167, baystars: 0.176, unions: 0.211 },
   { name: "Game 20", pearls: 0.158, baystars: 0.167, unions: 0.25 },
 ];
+
+export function invertDatapoints(
+  datapoints: WinrateDatapoint[]
+): WinrateDatapoint[] {
+  return datapoints.map((datapoint) => {
+    return {
+      name: datapoint.name,
+      pearls: 1 - datapoint.pearls,
+      baystars: 1 - datapoint.baystars,
+      unions: 1 - datapoint.unions,
+    };
+  });
+}
