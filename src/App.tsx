@@ -1,5 +1,6 @@
 import { Container, FormControlLabel, Switch } from "@material-ui/core";
 import { useState } from "react";
+import { TwitterShareButton } from "react-twitter-embed";
 import {
   CartesianGrid,
   Legend,
@@ -42,6 +43,7 @@ function App() {
           横浜DeNAベイスターズ(2021), 近鉄パールス(1958), トンボユニオンズ(1955)
           の勝率を試合数ベースで比較します。
         </p>
+        <TwitterShareButton url={"https://t-chov.github.io/db2021/"} />
         <LineChart
           width={960}
           height={600}
