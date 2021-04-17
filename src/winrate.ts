@@ -18,4 +18,5 @@ export const WIN_RATE = [
   { name: "Game 17", pearls: 0.188, baystars: 0.2 },
   { name: "Game 18", pearls: 0.176, baystars: 0.188 },
   { name: "Game 19", pearls: 0.167, baystars: 0.176 },
+  { name: "Game 20", pearls: 0.158, baystars: 0.167 },
 ];
