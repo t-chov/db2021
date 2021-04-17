@@ -34,7 +34,13 @@ function App() {
           <Line
             type="monotone"
             dataKey="pearls"
-            stroke="#8884d8"
+            stroke="#C90F0E"
+            activeDot={{ r: 8 }}
+          />
+          <Line
+            type="monotone"
+            dataKey="baystars"
+            stroke="#004091"
             activeDot={{ r: 8 }}
           />
         </LineChart>
