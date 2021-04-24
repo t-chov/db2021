@@ -1,4 +1,4 @@
-interface WinrateDatapoint {
+export interface WinrateDatapoint {
   name: string
   pearls: number
   baystars: number
