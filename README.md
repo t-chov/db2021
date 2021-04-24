@@ -10,6 +10,7 @@ create-react-app を使っているので、
 
 - `npm start` で開発モード起動
 - `npm run build` でビルドが可能です
+- `npm run test` で単体テストが可能です
 
 ## Learn More
 
