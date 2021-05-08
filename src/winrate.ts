@@ -43,6 +43,7 @@ export const WIN_RATE: WinrateDatapoint[] = [
   { name: 'Game 35', pearls: 0.152, baystars: 0.29, unions: 0.314 },
   { name: 'Game 36', pearls: 0.147, baystars: 0.313, unions: 0.306 },
   { name: 'Game 37', pearls: 0.171, baystars: 0.333, unions: 0.297 },
+  { name: 'Game 38', pearls: 0.167, baystars: 0.324, unions: 0.289 },
 ]
 
 export function invertDatapoints(datapoints: WinrateDatapoint[]): WinrateDatapoint[] {
